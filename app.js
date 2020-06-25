@@ -2,18 +2,18 @@ const { LogContext } = require('twilio/lib/rest/serverless/v1/service/environmen
 
 require('dotenv').config();
 
-const client = require('twilio')(process.env.SID, process.env.AUTH_TOKEN);
+const client = require('twilio')(process.env.TEST_SID, process.env.TEST_TOKEN);
 
-const from = process.env.FROM_NUMBER.toString();
-const to = process.env.TO_NUMBER.toString();
+const from = process.env.TEST_FROM.toString();
+const to = process.env.DANAR.toString();
 
 
 client.messages.create({
-    body: "Was geht bro",
+    body: "Sent from a Twilio Trial Account",
     from,
     to
 }).then(message => {
-    console.log(message.sid);
+    console.log(message);
 }).catch(err => {
     console.error(err);
 })
