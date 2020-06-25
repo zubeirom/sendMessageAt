@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/mail": "^7.2.1",
     "dotenv": "^8.2.0",
     "twilio": "^3.47.0"
   }
