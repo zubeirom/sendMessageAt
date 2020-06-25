@@ -6,6 +6,8 @@ require("dotenv").config();
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 const client = require("twilio")(process.env.SID, process.env.AUTH_TOKEN);
 
+// Before even thinking about using this program, don't be broke, or at least have enough money to use a sms api without free trial...
+// Thinking out loud...
 // steps: Define .env and fill with credentials, define date, define body in variable or create file - many options to choose 
 
 // Create .env file and fill with necessary credentials for sendgrid (optional) and twilio
