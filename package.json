@@ -11,6 +11,7 @@
   "dependencies": {
     "@sendgrid/mail": "^7.2.1",
     "dotenv": "^8.2.0",
+    "nexmo": "^2.7.0",
     "twilio": "^3.47.0"
   }
 }
